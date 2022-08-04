@@ -1,0 +1,32 @@
+{
+  "description": "Decimal Converter for jharbhoomi.kharkhand.gov.in",
+  "short_name": "BKDtoDecimil",
+  "name": "2Decimal",
+  "icons": [
+	{
+		"src": "jh_logo64.png",
+		"type": "image/png",
+		"sizes": "192x192"
+	},
+	{
+		"src": "jh_logo64.png",
+		"type": "image/png",
+		"sizes": "512x512"
+	},
+	{
+		"src": "jh_logo64.png",
+		"type": "image/png",
+		"sizes": "192x192",
+		"purpose": "maskable"
+	},
+	{
+		"src": "jh_logo64.png",
+		"type": "image/png",
+		"sizes": "512x512",
+		"purpose": "maskable"
+	}
+  ],
+  
+  "start_url": "index.html",
+  "display": "standalone"
+}

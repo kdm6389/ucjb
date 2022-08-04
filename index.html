@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Kapil Dev">
+  <meta name="viewport" content="width=device-width, user-scalable=no"/>
+  <link rel="icon" href="jh_logo64.png" type="image/png" sizes="32x32">
+  <link rel="manifest" href="manifest.json">
+  <meta name="description" content="Unit Converter: बीघा कठा धुर to dismil for jharbhoomi jharkhand">
+  <meta name="keywords" content="jharbhoomi, jharkhand, बीघा, कठा, धुर, dismil, acer, aamin, oprator, raiyats, jharbhoomi.jharkhand.gov.in">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4799007317527647" crossorigin="gkd_converter"></script>
+  <script async src="https://cdn.ampproject.org/v0.js"></script>
+<style> 
+  .iconDetails { margin-left:0%; float:left; height:48px; width:48px; }
+  .container2 { width:100%; height:auto; padding:0%; }
+  .footer { position: fixed; left: 0; right: 0; bottom: 0; }
+  .collapsible { border: none; text-align: left; }
+  .content { display: none; }
+  h4 { margin:0px; }
+</style>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HCNQL78M4C"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-HCNQL78M4C');
+</script>
+
+</head>
+
+<body>
+
+<div class='container2'>
+		<div>
+			<img src='jh_logo64.png' class='iconDetails'>
+		</div>	
+	<div style='margin-left:52px;'>
+	<h4>झारखण्ड सरकार</h4>
+	<div >राजस्व, निबंधन एवं भूमि सुधार विभाग</div>
+	</div>
+   <hr class="solid">
+</div>
+
+<form id="frm1">
+बीघा, कठा, धुर को डिसमील में बदले; केवल 5½ हाथ, के लघा वाले मौजा के लिए उपयुक्त (up to 5 digit precision) :<br>
+बीघा: 
+<input type="number" name="bigha" id="bigha" min="0" max="20" step="1" value="0" oninput="this.form.bighaRange.value=this.value" />
+<input type="range" name="bighaRange" min="0" max="20" step="1" value="0" oninput="this.form.bigha.value=this.value" /><br>
+
+कठा: 
+<input type="number" name="katha" id="katha" min="0" max="20" step="1" value="0" oninput="this.form.kathaRange.value=this.value" />
+<input type="range" name="kathaRange" min="0" max="20" step="1" value="0" oninput="this.form.katha.value=this.value" /><br>
+
+धुर: 
+<input type="number" name="dhur" id="dhur" min="0" max="20" step="1" value="0" oninput="this.form.dhurRange.value=this.value" />
+<input type="range" name="dhurRange" min="0" max="20" step="1" value="0" oninput="this.form.dhur.value=this.value" /><br>
+
+रकबा (Area): <label id="output1"></label><br><br>
+<input type="button" onclick="caculate()" value="Submit"> <input type="button" onClick="window.location.reload();" value="Reload">
+</form>
+<br><br>
+
+<a href="https://bit.ly/JharBhu"><b>bit.ly/JharBhu</b></a> update on Aug 4, 2022.<br>
+<button class="collapsible">More Information</button>
+<div class="content">
+<i>नोट:<br>
+Length Unit (fixed):<br>
+१ जरीब = १०० कड़ी = ४४ हाथ = ६६ फ़ीट = २२ गज।<br>
+∴ 1 हाथ = 1½ फ़ीट।<br>
+<br>
+Area Units (fixed):<br>
+१ बीघा = २० कठा = ४०० धुर = ८००० धुरकी।<br>
+१००० वर्ग कड़ी = १ डिसमल = ४३५.६ वर्ग फ़ीट।<br>
+१०० डिसमील = १ एकड़ होता है<br>
+१ धुर = १ लग्गी × १ लग्गी।<br>
+<br>
+लग्गी: हर मौजा का लग्गी अलग अलग होसकता है। पता करें अपने मौजा का लग्गी कितना है।<br>
+यदि 5½ हाथ का १ लग्गी है तो:<br>
+1 लग्गी = 5½ हाथ = 5½ × 1½ फ़ीट = 8¼फ़ीट।<br>
+& 1 धुर = 1 लग्गी × 1 लग्गी।<br>
+∴ 1धुर = 8¼फ़ीट × 8¼फ़ीट। (केवल 5½ हाथ का १ लग्गी के लिए)<br>
+∴ 1धुर = 68.0625 वर्ग फ़ीट। (केवल 5½ हाथ का १ लग्गी के लिए) </i><br><br><br>
+</div>
+
+
+
+
+<div class="footer"><a href="https://github.com/kdm6389/bkg_jb/issues">Report issue</a>. Felling happy <a href="https://freepay-upi.herokuapp.com/kdm6389@okaxis"><b>DonateMe</b></a>
+</div>
+</body>
+
+
+<script>
+  function caculate() {
+    let  b1 =  parseInt(document.getElementById("bigha").value);
+    let  k1 =  parseInt(document.getElementById("katha").value);
+    let d1 =  parseInt(document.getElementById("dhur").value);
+    let total = ((((( b1 * 20) + k1 ) * 20 ) + d1 ) * 0.15625);
+    document.getElementById('output1').innerHTML = '<i>' + b1 + ' बीघा, ' + k1 + ' कठा, ' + d1 + ' धुर' + '</i> = ' + total + " डिसमील" ; }
+</script>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+
+
+</html>
