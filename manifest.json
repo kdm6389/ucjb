@@ -4,23 +4,23 @@
   "name": "2Decimal",
   "icons": [
 	{
-		"src": "jh_logo64.png",
+		"src": "https://raw.githubusercontent.com/kdm6389/ucjb/main/jh_logo64.png",
 		"type": "image/png",
 		"sizes": "192x192"
 	},
 	{
-		"src": "jh_logo64.png",
+		"src": "https://raw.githubusercontent.com/kdm6389/ucjb/main/jh_logo64.png",
 		"type": "image/png",
 		"sizes": "512x512"
 	},
 	{
-		"src": "jh_logo64.png",
+		"src": "https://raw.githubusercontent.com/kdm6389/ucjb/main/jh_logo64.png",
 		"type": "image/png",
 		"sizes": "192x192",
 		"purpose": "maskable"
 	},
 	{
-		"src": "jh_logo64.png",
+		"src": "https://raw.githubusercontent.com/kdm6389/ucjb/main/jh_logo64.png",
 		"type": "image/png",
 		"sizes": "512x512",
 		"purpose": "maskable"
