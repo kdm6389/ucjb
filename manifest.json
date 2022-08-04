@@ -1,7 +1,7 @@
 {
-  "description": "Decimal Converter for jharbhoomi.kharkhand.gov.in",
-  "short_name": "uc2Decimal",
-  "name": "uc2Decimal",
+  "description": "Decimal unit converter for jharbhoomi.kharkhand.gov.in",
+  "short_name": "ucjb",
+  "name": "ucjb",
   "icons": [
 	{
 		"src": "jh_logo64.png",
