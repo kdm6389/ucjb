@@ -4,29 +4,16 @@
   "name": "2Decimal",
   "icons": [
 	{
-		"src": "https://raw.githubusercontent.com/kdm6389/ucjb/main/jh_logo64.png",
+		"src": "jh_logo64.png",
 		"type": "image/png",
 		"sizes": "192x192"
 	},
 	{
-		"src": "https://raw.githubusercontent.com/kdm6389/ucjb/main/jh_logo64.png",
+		"src": "jh_logo64.png",
 		"type": "image/png",
 		"sizes": "512x512"
-	},
-	{
-		"src": "https://raw.githubusercontent.com/kdm6389/ucjb/main/jh_logo64.png",
-		"type": "image/png",
-		"sizes": "192x192",
-		"purpose": "maskable"
-	},
-	{
-		"src": "https://raw.githubusercontent.com/kdm6389/ucjb/main/jh_logo64.png",
-		"type": "image/png",
-		"sizes": "512x512",
-		"purpose": "maskable"
 	}
   ],
-  
   "start_url": "index.html",
   "display": "standalone"
 }
