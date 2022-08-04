@@ -4,12 +4,12 @@
   "name": "ucjb",
   "icons": [
 	{
-		"src": "jh_logo64.png",
+		"src": "jh_logo192.png",
 		"type": "image/png",
 		"sizes": "192x192"
 	},
 	{
-		"src": "jh_logo64.png",
+		"src": "jh_logo512.png",
 		"type": "image/png",
 		"sizes": "512x512"
 	}
