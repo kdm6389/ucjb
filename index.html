@@ -45,11 +45,25 @@
 </div>
 <form id="frm1">
 बीघा, कठा, धुर को डिसमील में बदले; केवल 5½ हाथ, के लघा वाले मौजा के लिए उपयुक्त (up to 5 digit precision) :<br>
-<!--
-लग्गी/लग्घी>हाथ: 
-<input type="number" name="lgha" id="lgha" min="3" max="10" step="0.5" value="5.5" oninput="this.form.lghaRange.value=this.value" />
-<input type="range" name="lghaRange" min="3" max="10" step="0.5" value="5.5" oninput="this.form.lgha.value=this.value" /><br>
- -->
+<fieldset>
+<legend>convert:</legend>
+<label for="hath">लग्गी/लग्घी </label>
+	<select name="hath" id="hath">
+		<option value="0.0826446281">4 हाथ - Ranchi </option>
+		<option value="0.1045971074">4.5 हाथ</option>
+		<option value="0.1291322314">5 हाथ</option>
+		<option value="0.15625" selected>5.5 हाथ - Bandanwar </option>
+		<option value="0.1859504132">6 हाथ</option>
+		<option value="0.2182334711">6.5 हाथ</option>
+		<option value="0.2530991736">7 हाथ</option>
+		<option value="0.2905475207">7.5 हाथ</option>
+	</select>
+
+</fieldset>
+
+
+<fieldset>
+<legend>input:</legend>
 बीघा: 
 <input type="number" name="bigha" id="bigha" min="0" max="20" step="1" value="0" oninput="this.form.bighaRange.value=this.value" />
 <input type="range" name="bighaRange" min="0" max="20" step="1" value="0" oninput="this.form.bigha.value=this.value" /><br>
@@ -64,6 +78,7 @@
 
 रकबा : <label id="output1"></label><br><br>
 <input type="button" onclick="caculate()" value="Submit"> <input type="button" onClick="window.location.reload();" value="Reload">
+</fieldset>
 </form>
 <br><br>
 <br>
@@ -138,11 +153,13 @@ IV. भूमापन जरीब (Revenue chain) - दो प्रकार 
 
 <script>
 function caculate() {
+	var select = document.getElementById('hath');
+	var l1 = select.options[select.selectedIndex].value;
 	let  b1 =  parseInt(document.getElementById("bigha").value);
 	let  k1 =  parseInt(document.getElementById("katha").value);
 	let d1 =  parseInt(document.getElementById("dhur").value);
-	let total = ((((( b1 * 20) + k1 ) * 20 ) + d1 ) * 0.15625);
-	document.getElementById('output1').innerHTML = '<i>' + b1 + ' बीघा, ' + k1 + ' कठा, ' + d1 + ' धुर' + '</i> = ' + total + " डिसमील" ; }
+	let total = ((((( b1 * 20) + k1 ) * 20 ) + d1 ) * l1);
+	document.getElementById('output1').innerHTML = '<i>' + b1 + ' बीघा, ' + k1 + ' कठा, ' + d1 + ' धुर' + '</i> = ' + total + " डिसमील " ; }
 </script>
 
 <script>
