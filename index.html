@@ -53,12 +53,10 @@
 		<option value="0.1045971074">4.5 हाथ</option>
 		<option value="0.1291322314">5 हाथ</option>
 		<option value="0.15625" selected>5.5 हाथ - Bandanwar </option>
-		<option value="0.1707930595" selected>5.75 हाथ - गोड्डा टाउन</option>
 		<option value="0.1859504132">6 हाथ</option>
 		<option value="0.2182334711">6.5 हाथ</option>
 		<option value="0.2530991736">7 हाथ</option>
-		<option value="0.2905475207">7.5 हाथ (value = ((L*1.5)^2)/435.56)</option
-	
+		<option value="0.2905475207">7.5 हाथ</option>
 	</select>
 
 </fieldset>
@@ -155,7 +153,7 @@ IV. भूमापन जरीब (Revenue chain) - दो प्रकार 
 
 <script>
 function caculate() {
-	var select = document.getElementById('hath');	
+	var select = document.getElementById('hath');
 	var l1 = select.options[select.selectedIndex].value;
 	let  b1 =  parseInt(document.getElementById("bigha").value);
 	let  k1 =  parseInt(document.getElementById("katha").value);
